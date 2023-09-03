@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <div class="img">
+                <img src="/images/logo.jpg" rel="logo">
+            </div>
+            <div class="titleh1">
+                <h1>Welcome to Game Store</h1>
+            </div>
+        </div>
+        <div class="navBar">
+            <ul>
+                <% pages.forEach(page=> { %>
+                    <li>
+                        <a href="/page/<%= page._id %>">
+                            <%= page.pageTitle %>
+                        </a>
+                    </li>
+                    <% }); %>
+            </ul>
+        </div>
+        <div class=" pages">
+            <div class="page-img">
+                <img src="/<%= pageDetails.heroImagePath %>" alt="<%= pageDetails.heroImageName %>" width="1000px"
+                    height="400" />
+            </div>
+            <h2>
+                <%= pageDetails.pageTitle %>
+            </h2>
+            <p>
+                <%= pageDetails.description %>
+            </p>
+        </div>
+
+        <%- include('layouts/footer'); -%>
+    </div>
+</body>
+
+</html>

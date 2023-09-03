@@ -1,0 +1,232 @@
+.container{
+    display: grid;
+    width: 90%;
+    margin-left: 50px;
+    border: 2px solid blue;
+    box-shadow: 3px 3px 5px 2px rgba(231, 147, 147, 0.3);
+    border-radius: 10px;
+}
+
+.title{
+    display: flex; 
+    gap: 250px;
+}
+.img img{
+    width: 150px;
+}
+.titleh1 h1{
+    margin-bottom: 10px;
+    font-size:40px;
+    color: rgb(49, 22, 167);
+   
+}
+
+.navBar ul{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    background-color: rgb(201, 71, 142);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: -20px;
+    font-size: 30px;
+}
+
+.navBar ul a{
+    margin-left: 150px;
+}
+
+.navBar ul li{
+    list-style-type: none;
+}
+
+.navBar ul li a{
+    color: white;
+    font-size: 30px;
+}
+
+.login{
+    border: 2px solid blue;
+    box-shadow: 3px 3px 5px 2px rgba(231, 147, 147, 0.3);
+    border-radius: 10px;
+    width:400px;
+    margin-left: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: darkcyan;
+}
+ 
+.login h1{
+    text-align: center;
+    color: aliceblue;
+}
+
+.wrapper label{
+    color: aliceblue;
+    font-size: 20px;
+}
+.wrapper{
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.wrapper input{
+    margin-left: 20px;
+}
+.submission{
+ margin-left: 200px;
+ margin-bottom: 20px;
+}
+.submission input{
+ font-size: 20px;
+ background-color: crimson;
+ color: aliceblue;
+}
+
+.footer{
+    color: aliceblue;
+    background-color:rgb(201, 71, 142);
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.content h1{
+    text-align: center;
+    font-size: 20px;
+    color: blueviolet;
+    margin-top: 30px;
+    font-size: 40px;
+  
+}
+
+.content p{
+    text-align: center;
+    color: brown;
+    margin: 50px;
+    font-size:18px;
+}
+
+
+.error-msg {
+    color: red;
+    font-size: 14px;
+    margin-left: 180px;
+}
+
+.heading h1{
+    font-size: 30px;
+    color: darkblue;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+}
+.addPage{
+    background-color: burlywood;
+    margin-top: -30px;
+    padding-bottom: 70px;
+}
+
+.addPage h1{
+    text-align: center;
+    color: blueviolet;
+}
+
+.addPage label{
+    margin-left: 250px;
+    color: brown;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+   padding-bottom: 20px;
+}
+#pageTitle{
+    margin-left: 20px;
+    padding-right: 400px;
+}
+#titleBox{
+    margin-left: 5px;
+    padding-right: 220px;
+    margin-bottom: 10px;
+}
+#description{
+    margin-left: 5px;
+    padding-right: 400px;
+    padding-bottom: 50px;
+}
+
+.form-group{
+margin-top: 20px;
+margin-left: 100px;
+margin-right: 20px;
+margin-bottom: 20px;
+
+}
+
+.submission{
+    margin-left: 550px;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+
+}
+
+.error{
+    color: red;
+    margin-left: 50px;
+}
+
+.logout h1{
+    margin-top: 100px;
+    color: blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: 30px;
+    margin-left: 520px;
+}
+
+.logout p{
+    color: darkgreen;
+    margin-left: 450px;
+    margin-bottom: 150px;
+    font-size: 20px;
+}
+
+.table{
+margin-left: 450px;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+.notification h1{
+    margin-left: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: blueviolet;
+}
+
+.notification p{
+    margin-left: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: brown;
+    font-size: 20px;
+}
+
+.page-img img {
+    margin-left: 50px;
+}
+
+.pages h2{
+    text-align: center;
+    color: blueviolet;
+    font-size: 30px;
+}
+
+.pages p{
+    text-align: center;
+    color: brown;
+    font-size: 20px;
+}
+

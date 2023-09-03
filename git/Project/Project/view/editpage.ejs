@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <div class="img">
+                <img src="images/logo.jpg" rel="logo">
+            </div>
+            <div class="titleh1">
+                <h1>Welcome to Game Store</h1>
+            </div>
+            <div class="subtitle">
+                <h3>Welcome Admin!</h3>
+            </div>
+        </div>
+        <div class="navBar">
+            <ul>
+                <li><a href="/addpage">Add Page</a></li>
+                <li><a href="/editpage">Edit Page</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </div>
+        <% if (errorMessage) { %>
+            <p class="error-message"><%= errorMessage %></p>
+          <% } %>
+          
+          <div class="table">
+            <table border="1">
+              <tr>
+                <th>Page</th>
+                <th>Manage</th>
+                <th>Manage</th>
+              </tr>
+              <% for (let i = 0; i < pages.length; i += 1) { %>
+                <tr>
+                  <td>
+                    <h2><%= pages[i] ? pages[i].pageTitle : '' %></h2>
+                  </td>
+                  <td>
+                    <% if (pages[i]) { %>
+                      <a href="/edit?pageId=<%= pages[i]._id %>">Edit</a>
+                    <% } %>
+                  </td>
+                  <td>
+                    <% if (pages[i]) { %>
+                      <a href="/delete?pageId=<%= pages[i]._id %>">Delete</a>
+                    <% } %>
+                  </td>
+                </tr>
+              <% } %>
+            </table>
+          </div>
+        <%- include('layouts/footer'); -%>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<%- include('layouts/headers'); -%>
+<body>
+  <div class="container">
+    <div class="title">
+      <div class="img">
+          <img src="images/logo.jpg" rel="logo">
+      </div>
+      <div class="titleh1">
+          <h1>Welcome to Game Store</h1>
+      </div>
+  </div>
+  <div class="navBar">
+      <ul>
+          <li><a href="/addpage">Add Page</a></li>
+          <li><a href="/editpage">Edit Page</a></li>
+          <li><a href="/logout">Logout</a></li>
+      </ul>
+  </div>
+    <div class="addPage">
+        <h1 class="page-title">Edit Page</h1>
+        <form action="/updatepage/<%= page._id %>" method="POST" enctype="multipart/form-data">
+          <div class="framework">
+            <label for="pageTitle">Page title</label>
+            <input type="text" id="pageTitle" name="pageTitle" value="<%= page.pageTitle %>">
+          </div>
+          <div class="framework">
+            <label for="heroImage">Hero Image</label>
+            <input type="text" id="titleBox" name="titleBox" value="<%= page.titleBox %>">
+            <input type="file" id="heroImage" name="heroImage" value="<%= page.heroImagePath %>">
+          </div>
+          
+          <div class="framework">
+            <label for="description">Description</label>
+            <textarea id="description" name="description"><%= page.description %></textarea>
+          </div>
+          <div class="submission">
+            <input type="submit" value="Update Page">
+          </div>
+        </form>
+      </div>
+      
+    <%- include('layouts/footer'); -%>
+  </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+
+<%- include('layouts/headers'); -%>
+<body>
+    <div class="container">
+        <%- include('layouts/title'); -%>
+        <%- include('layouts/navBar'); -%>
+        <div class="login">
+            <h1>Login</h1>
+            <form action="signin" method="POST">
+
+                <div class="wrapper">
+                    <label for="username">User Name</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="error">
+                    <% if (typeof(errors) !=='undefined' ) { %>
+                        <% for (var error of errors) { %>
+                            <p class="error-msg">
+                                <%= error.msg %>
+                            </p>
+                            <% } %>
+                                <% } %>
+                </div>
+                <div class="wrapper">
+                    <label for="password">Password</label>&nbsp;&nbsp;
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="submission">
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+        </div>
+        <%- include('layouts/footer'); -%>
+    </div>
+</body>
+</html>

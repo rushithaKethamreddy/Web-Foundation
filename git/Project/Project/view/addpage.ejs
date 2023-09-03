@@ -1,0 +1,69 @@
+<%- include('layouts/headers'); -%>
+<!-- Other head elements -->
+<body>
+    <div class="container">
+        <div class="title">
+            <div class="img">
+                <img src="images/logo.jpg" rel="logo">
+            </div>
+            <div class="titleh1">
+                <h1>Welcome to Game Store</h1>
+            </div>
+            <div class="subtitle">
+                <h3>Welcome Admin!</h3>
+            </div>
+        </div>
+        <div class="navBar">
+            <ul>
+                <li><a href="/addpage">Add Page</a></li>
+                <li><a href="/editpage">Edit Page</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </div>
+        <div class="addPage">
+            <h1 class="page-title">Add Page</h1>
+            <form action="sigin" method="POST" enctype="multipart/form-data">
+                <div class="framework">
+                  <label for="pageTitle">Page title</label>
+                  <input type="text" id="pageTitle" name="pageTitle" >
+                  <% if (er.some(error => error.path === 'pageTitle')) { %>
+                    <p class="error">
+                      Please enter page title
+                    </p>
+                <%}%>
+                </div>
+                <div class="framework">
+                    <label for="heroImage">Hero Image</label>
+                    <input type="text" id="titleBox" name="titleBox">
+                    <input type="file" id="heroImage" name="heroImage">
+                  </div>
+                  <% if (er.some(error => error.path === 'heroImage')) { %>
+                    <p class="error">
+                      No Image is uploaded
+                    </p>
+                <%}%>
+                  <% if (er.some(error => error.path === 'titleBox')) { %>
+                    <p class="error">
+                      Please enter image name
+                    </p>
+                <%}%>
+                <div class="framework">
+                  <label for="description">Description</label>
+                  <textarea id="description" name="description"></textarea>
+                  <% if (er.some(error => error.path === 'description')) { %>
+                    <p class="error">
+                      Please enter descrption 
+                    </p>
+                <%}%>
+                </div>
+                <div class="submission">
+                  <input type="submit" value="Submit!">
+                </div>
+              </form>
+        </div>
+       <%- include('layouts/footer'); -%>
+    </div>
+
+</body>
+
+</html>
