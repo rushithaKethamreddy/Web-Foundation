@@ -1,0 +1,51 @@
+.innerImage img{
+    width:1200px;
+    height: 600px;
+}
+
+.media{
+    display: flex;
+}
+
+.video video{
+    margin-top: 20px;
+    margin-right: 20px;
+    width:450px;
+    border: 2px solid palevioletred; /* Set the border size and color */
+    border-radius: 8px; /* Optionally, add rounded corners to the border */
+    box-shadow: 0 0 5px skyblue;
+}
+
+.mediaPara h2{
+    margin-top: 100px;
+    color: rgb(13, 145, 197) ;
+    text-align: center;
+}
+
+.mediaPara p{
+    color: darkred;
+    text-align: center;
+}
+
+table {
+    width: 700px;
+    border-collapse: collapse;
+    margin-left: 200px;
+}
+
+table, td, th {
+    border: 2px solid rgb(9, 122, 19);
+}
+table tr th {
+    color: white;
+    background-color: blueviolet;
+}
+table tr td{
+    color: darkred;
+    background-color: pink;
+}
+.priceTable h2{
+    margin-top: 50px;
+    text-align: center;
+    color: darkgoldenrod;
+}

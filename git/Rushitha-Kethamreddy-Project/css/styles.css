@@ -1,0 +1,303 @@
+/* Name: Rushitha Kethamreddy
+   Student Id:8891810
+   Email Id: Rkethamreddy1810@conestogac.on.ca */
+
+.container{
+    width:90%;
+    border: 2px solid rgb(236, 69, 167);
+    display: grid;
+    margin-left: 50px;
+}
+
+header{
+    margin-left: 10px;
+    display: flex;
+    gap: 200px;
+ }
+ header img{
+    width: 100px;
+    height: auto;
+}
+
+header h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: palevioletred;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+ }
+
+nav{
+    background-color: rgba(54, 124, 189, 0.329); 
+    padding: 20px 0; 
+    text-align: center;
+}
+
+nav a{
+    font-size: 20px; 
+    font-weight: bold; 
+    color: rgb(219, 16, 84); 
+    text-decoration: none; 
+    padding: 0 30px; 
+}
+main{
+    width: 800px; 
+    float: left; 
+}
+
+aside{
+    width: 300px; 
+    float: right; 
+    padding-left: 20px; 
+}
+
+.redlink{
+    color: #9f0015; 
+    text-decoration: none; 
+}
+.redlink:hover{ 
+    color: #eb0a5a; 
+}
+
+aside ul{
+    list-style: none; 
+    padding-left: 0; 
+}
+aside li:nth-child(odd){
+    color: white; 
+    background-color: #890417; 
+}
+aside li{
+    line-height: 30px; 
+    padding-left: 5px; 
+    font-weight: bold; 
+}
+ nav ul {
+    list-style: none;
+    padding-left: 0; 
+ }
+
+ nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav > ul > li {
+    display: inline-block;
+}
+
+nav ul li ul {
+    width: 200px;
+    text-align: left;
+    position: absolute;
+    z-index: 999;
+    background-color: #118e92;
+    box-shadow: 0 0 5px #800d29;
+    display: none;
+}
+
+nav ul li ul a {
+    color: #f7e7d9;
+    display: block;
+    padding: 10px;
+}
+
+nav ul li ul a:hover{
+    background-color: #dd3771;
+    color: #890417;
+}
+nav ul li:hover ul{
+    display: block;
+}
+
+.img img{
+    width: 1200px;
+    height: 500px;
+}
+
+.contents h2{
+    text-align: center;
+    color: blueviolet;
+    font-family:Apple Chancery, cursive;
+}
+.contents p{
+    text-align: center;
+    color: crimson;
+}
+
+.contect-cake{
+    display: flex;
+    gap: 150px;
+}
+
+.para{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.para h3{
+    font-family:Apple Chancery, cursive;
+    color:darkgreen;
+}
+
+.para p{
+    color: blue;
+}
+.contect-cake img{
+    width:200px;
+    height: auto;
+    clip-path: polygon(53% 5%, 100% 34%, 86% 91%, 16% 90%, 1% 34%);
+}
+
+.cake img{
+    margin-top: -50px;
+    width:200px;
+    height: auto;
+    clip-path: polygon(0 16%, 87% 16%, 100% 50%, 88% 89%, 0 89%, 17% 52%);
+
+}
+
+.cake{
+    display: flex;
+    margin-left: 50px;
+}
+
+.cake h3{
+    
+    font-family:Apple Chancery, cursive;
+    color:rgb(235, 43, 9);
+    margin-left: 50px;
+
+}
+
+.cake p{
+    color: rgb(255, 0, 200);
+    margin-left: 50px;
+}
+
+.purchase h2 {
+    color: slateblue;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.purchase-item1,.purchase-item2,.purchase-item3{
+    border: 2px solid pink;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px skyblue;
+}
+
+.purchase-item1 img,.purchase-item2 img,.purchase-item3 img {
+    width:200px;   
+}
+
+.purchaseValues{
+    display: flex;
+    gap: 60px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+
+}
+
+.menu{
+    display: flex;
+    background-color: palevioletred;
+    padding-left: 250px;
+    gap: 100px;
+}
+
+.menu1 h2,.menu2 h2,.menu3 h2{
+ text-align: center;
+ color:forestgreen;
+}
+
+.menu1 ul,.menu2 ul,.menu3 ul{
+    list-style:decimal;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.menu1 ul li a:hover{
+    color: rgb(212, 199, 11);
+}
+
+.menu2 ul li a:hover{
+    color: rgb(212, 199, 11);
+}
+.menu3 ul li a:hover{
+    color: rgb(212, 199, 11);
+}
+
+.footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #800d29;
+    background-color: rgba(54, 124, 189, 0.329); 
+    text-align: center;
+}
+
+
+.info{
+    border: 2px solid pink;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px skyblue;
+    width: 550px;
+    margin-left: 280px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: aqua;
+
+}
+
+.option-list{
+    margin-left: 150px;
+    margin-top: 20px;
+    color: red;
+}
+
+
+.info h2{
+    color: rgb(124, 4, 84);
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.name,.email,.radio-button{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -30px;
+    color: red;
+}
+.radio-button label{
+    margin-left: 20px;
+}
+.radio1,.radio2,.radio3{
+    margin-left: 180px;
+    color: red;
+}
+.checkbox{
+    margin-left: 160px;
+    color: red;
+   
+}
+.checkbox h4{
+    font-weight: normal;
+    margin-left: -10px;
+}
+
+.checkbox label{
+   
+    color: red;
+    
+}
+
+.submit{
+    margin-top: 20px;
+    margin-left: 200px;
+    
+}
+
+.submit button,.submit input{
+    color: blueviolet;
+}
